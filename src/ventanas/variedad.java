@@ -31,24 +31,22 @@ public class variedad extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         informacion = new javax.swing.JButton();
         AYUDA = new javax.swing.JButton();
         COMPRA = new javax.swing.JButton();
         salida = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         fondo2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 26)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Footlight MT Light", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Bienvenido a King Monkey, ¿Que es lo que necesita?");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 670, 30));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 210, 150, 170));
+        jLabel1.setText("Bienvenido a King Monkey ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 680, 60));
 
         informacion.setBackground(new java.awt.Color(255, 51, 51));
         informacion.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -59,13 +57,14 @@ public class variedad extends javax.swing.JFrame {
                 informacionActionPerformed(evt);
             }
         });
-        getContentPane().add(informacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, -1, 50));
+        getContentPane().add(informacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, 50));
 
         AYUDA.setBackground(new java.awt.Color(255, 102, 102));
         AYUDA.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         AYUDA.setForeground(new java.awt.Color(0, 0, 0));
         AYUDA.setText("AYUDA");
-        getContentPane().add(AYUDA, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 300, 50));
+        AYUDA.setToolTipText("");
+        getContentPane().add(AYUDA, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 380, 300, 50));
 
         COMPRA.setBackground(new java.awt.Color(255, 51, 51));
         COMPRA.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -76,7 +75,7 @@ public class variedad extends javax.swing.JFrame {
                 COMPRAActionPerformed(evt);
             }
         });
-        getContentPane().add(COMPRA, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, 300, 70));
+        getContentPane().add(COMPRA, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 300, 70));
 
         salida.setBackground(new java.awt.Color(0, 102, 102));
         salida.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -88,6 +87,15 @@ public class variedad extends javax.swing.JFrame {
             }
         });
         getContentPane().add(salida, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 480, 170, -1));
+
+        jLabel3.setForeground(new java.awt.Color(204, 255, 255));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo_variedad-removebg-preview.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, 410, 360));
+
+        jLabel2.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 255));
+        jLabel2.setText("¿Que es lo que necesita?");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
 
         fondo2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         fondo2.setForeground(new java.awt.Color(255, 255, 255));
@@ -156,6 +164,7 @@ public class variedad extends javax.swing.JFrame {
     private javax.swing.JButton informacion;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JButton salida;
     // End of variables declaration//GEN-END:variables
 }
