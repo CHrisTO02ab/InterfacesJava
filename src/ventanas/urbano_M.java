@@ -110,21 +110,15 @@ public class urbano_M extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void añadir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_añadir1ActionPerformed
-        boleta_pago jo =new boleta_pago();
-        this.dispose();
-        jo.setVisible(true);
+
     }//GEN-LAST:event_añadir1ActionPerformed
 
     private void añadir2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_añadir2ActionPerformed
-        boleta_pago jo =new boleta_pago();
-        this.dispose();
-        jo.setVisible(true);
+
     }//GEN-LAST:event_añadir2ActionPerformed
 
     private void añadir3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_añadir3ActionPerformed
-        boleta_pago jo =new boleta_pago();
-        this.dispose();
-        jo.setVisible(true);
+
     }//GEN-LAST:event_añadir3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

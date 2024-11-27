@@ -1,26 +1,62 @@
 
 package ventanas;
-
+import java.util.HashMap;
+import java.util.Map;
+import javax.swing.*;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
 
 public class boleta_pago extends javax.swing.JFrame {
 
-   private DefaultTableModel modelo;
+   private DefaultTableModel modeloTabla;
+   private int contador =0;
+   private Map<String,Integer> carrito;
    
     public boleta_pago() {
         initComponents();
+        modeloTabla = new DefaultTableModel(new Object[]{"Producto", "Talla", "Cantidad", "Precio Total"}, 0);
+              DefaultTableModel modeloTabla =new DefaultTableModel();
+
+         setTitle("BOLETA DE PAGOS");
         setLocationRelativeTo(null);
-       modelo=new DefaultTableModel();
-       modelo.addColumn("producto");
-       modelo.addColumn("talla");
-       modelo.addColumn("cantidad");
-       modelo.addColumn("precio");
-       tabla.setModel(modelo);    
-         
+        carrito = new HashMap<>();
+      
+        
     }
-    
+    public void agregarProducto(String producto, String talla, double precioUnitario) {
+        String claveProducto = producto + " - " + talla;
+// Si el producto ya existe en el carrito, actualizamos la cantidad y el precio
+        if (carrito.containsKey(claveProducto)) {
+            int fila = obtenerFilaPorProductoYtalla(producto, talla);
+            int cantidadActual = carrito.get(claveProducto);
+            cantidadActual += 1;
+            carrito.put(claveProducto, cantidadActual);
+
+            // Actualizamos cantidad y precio total en el JTable
+            modeloTabla.setValueAt(cantidadActual, fila, 2);
+            modeloTabla.setValueAt(cantidadActual * precioUnitario, fila, 3);
+
+        
+        } else {
+            // Si es un nuevo producto, lo añadimos al carrito y al JTable
+            carrito.put(claveProducto, 1);
+            modeloTabla.addRow(new Object[]{producto, talla, 1, precioUnitario});
+
+        }
+
+    }
+    private int obtenerFilaPorProductoYtalla(String producto, String talla) {
+        for (int i = 0; i < modeloTabla.getRowCount(); i++) {
+            String productoTabla = (String) modeloTabla.getValueAt(i, 0);
+            String tallaTabla = (String) modeloTabla.getValueAt(i, 1);
+            if (producto.equals(productoTabla) && talla.equals(tallaTabla)) {
+                return i;
+            }
+        }
+        return -1;
+    }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -95,41 +131,8 @@ public class boleta_pago extends javax.swing.JFrame {
         ga.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    
-  
+     
    
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(boleta_pago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(boleta_pago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(boleta_pago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(boleta_pago.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new boleta_pago().setVisible(true);
-            }
-        });
-    }
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -140,4 +143,5 @@ public class boleta_pago extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tabla;
     // End of variables declaration//GEN-END:variables
+
 }
