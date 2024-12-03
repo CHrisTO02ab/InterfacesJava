@@ -4,6 +4,8 @@
  */
 package ventanas;
 
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -113,37 +115,48 @@ public class interfaz extends javax.swing.JFrame {
     private void INGRESARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_INGRESARActionPerformed
       String usu=usuario.getText();
       String pas=contraseña.getText();
+      
         if (usu.isEmpty()|pas.isEmpty()) {
             JOptionPane.showMessageDialog(null,"Algun campo esta vacio");
         }else{
             if (usu.equals("renato1") && pas.equals("123456")) {
-             JOptionPane.showMessageDialog(null, "Bienvenido Renato\n"+"bienvenidos a King Monkey");
+            Icon icono1 = new ImageIcon(getClass().getResource("/imagenes/perro.png"));
+             JOptionPane.showMessageDialog(rootPane, "Bienvenido Renato\n"+"bienvenidos a King Monkey","Bienvenido",JOptionPane.PLAIN_MESSAGE,icono1);    
              variedad ing = new variedad();
                 ing.setVisible(true);
                 this.dispose();
             }else{
             if (usu.equals("elias2") && pas.equals("elias12")) {
-             JOptionPane.showMessageDialog(null, "Bienvenido Elias\n"+"bienvenidos a King Monkey");
+           Icon icono1 = new ImageIcon(getClass().getResource("/imagenes/hanster.png"));
+             JOptionPane.showMessageDialog(rootPane, "Bienvenido Elias\n"+"bienvenidos a King Monkey","Bienvenido",JOptionPane.PLAIN_MESSAGE,icono1);
              variedad sh = new variedad();
                 sh.setVisible(true);
                 this.dispose(); 
             }else{
             if (usu.equals("christian3") && pas.equals("christian34")) {
-             JOptionPane.showMessageDialog(null, "Bienvenido christian\n"+"bienvenidos a King Monkey");
+              Icon icono1 = new ImageIcon(getClass().getResource("/imagenes/chris.png"));
+             JOptionPane.showMessageDialog(rootPane, "Bienvenido Christian\n"+"bienvenidos a King Monkey","Bienvenido",JOptionPane.PLAIN_MESSAGE,icono1);
              variedad oi = new variedad();
                 oi.setVisible(true);
                 this.dispose(); 
             }else{
             if (usu.equals("christopher4") && pas.equals("christopher456")) {
-             JOptionPane.showMessageDialog(null, "Bienvenido christopher\n"+"bienvenidos a King Monkey");
+            Icon icono1 = new ImageIcon(getClass().getResource("/imagenes/me.png"));
+             JOptionPane.showMessageDialog(rootPane, "Bienvenido Christopher\n"+"bienvenidos a King Monkey","Bienvenido",JOptionPane.PLAIN_MESSAGE,icono1);
              variedad q = new variedad();
                 q.setVisible(true);
                 this.dispose();  
-            
+            }else{
+                if (usu.equals("reychimpa") && pas.equals("admin")) {
+                    Icon icono = new ImageIcon(getClass().getResource("/imagenes/platano.png"));
+             JOptionPane.showMessageDialog(rootPane, "Bienvenido ReyChimpa\n"+"bienvenidos a su casa","Bienvenido",JOptionPane.PLAIN_MESSAGE,icono);
+             variedad oi = new variedad();
+                oi.setVisible(true);
+                this.dispose(); 
                  }else{
                     JOptionPane.showMessageDialog(null,"Usuario o contraseña invalido");
             }    
-            }
+            }}
             } 
         }                
     }//GEN-LAST:event_INGRESARActionPerformed

@@ -27,18 +27,18 @@ private int x=0;
          setImage ();
     }
       public void setImage (){
-          ImageIcon icon = new ImageIcon(getClass().getResource("/imagenes/1.png"));
-          ImageIcon icon1 = new ImageIcon(getClass().getResource("/imagenes/2.png"));
-          ImageIcon icon2 = new ImageIcon(getClass().getResource("/imagenes/3.png"));
-          ImageIcon icon3 = new ImageIcon(getClass().getResource("/imagenes/4.png"));
-          ImageIcon icon4 = new ImageIcon(getClass().getResource("/imagenes/5.png"));
-          ImageIcon icon5 = new ImageIcon(getClass().getResource("/imagenes/6.png"));
-          ImageIcon icon6 = new ImageIcon(getClass().getResource("/imagenes/7.png"));
-          ImageIcon icon7 = new ImageIcon(getClass().getResource("/imagenes/8.png"));
-          ImageIcon icon8 = new ImageIcon(getClass().getResource("/imagenes/9.png"));
-          ImageIcon icon9 = new ImageIcon(getClass().getResource("/imagenes/10.png"));
-          ImageIcon icon10 = new ImageIcon(getClass().getResource("/imagenes/11.png"));      
-          ImageIcon icon11 = new ImageIcon(getClass().getResource("/imagenes/12.png"));
+          ImageIcon icon = new ImageIcon(getClass().getResource("/imagenes/a.png"));
+          ImageIcon icon1 = new ImageIcon(getClass().getResource("/imagenes/b.png"));
+          ImageIcon icon2 = new ImageIcon(getClass().getResource("/imagenes/c.png"));
+          ImageIcon icon3 = new ImageIcon(getClass().getResource("/imagenes/d.png"));
+          ImageIcon icon4 = new ImageIcon(getClass().getResource("/imagenes/e.png"));
+          ImageIcon icon5 = new ImageIcon(getClass().getResource("/imagenes/f.png"));
+          ImageIcon icon6 = new ImageIcon(getClass().getResource("/imagenes/g.png"));
+          ImageIcon icon7 = new ImageIcon(getClass().getResource("/imagenes/h.png"));
+          ImageIcon icon8 = new ImageIcon(getClass().getResource("/imagenes/i.png"));
+          ImageIcon icon9 = new ImageIcon(getClass().getResource("/imagenes/j.png"));
+          ImageIcon icon10 = new ImageIcon(getClass().getResource("/imagenes/k.png"));      
+          ImageIcon icon11 = new ImageIcon(getClass().getResource("/imagenes/l.png"));
           Image img = icon.getImage().getScaledInstance(jLabelimagen1.getWidth(), jLabelimagen1.getHeight(), Image.SCALE_SMOOTH);
           jLabelimagen1.setIcon(new ImageIcon(img));
           Image img1 = icon1.getImage().getScaledInstance(jLabelimagen2.getWidth(), jLabelimagen2.getHeight(), Image.SCALE_SMOOTH);
@@ -280,7 +280,7 @@ private int x=0;
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(831, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1734,15 +1734,17 @@ private int x=0;
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel104, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTextFieldtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1762,7 +1764,7 @@ private int x=0;
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1009, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
