@@ -100,6 +100,11 @@ public class infoEmpresa extends javax.swing.JFrame {
         jButton4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton4.setForeground(new java.awt.Color(0, 0, 0));
         jButton4.setText("HOMBRES");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, 210, 50));
 
         jButton5.setBackground(new java.awt.Color(0, 255, 102));
@@ -145,6 +150,12 @@ public class infoEmpresa extends javax.swing.JFrame {
         this.dispose();
         tj.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        hombres_info te = new hombres_info();
+        this.dispose();
+        te.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -33,8 +33,8 @@ public class interfaz extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         USUARIO = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        usua = new javax.swing.JTextField();
-        contrase = new javax.swing.JPasswordField();
+        usuario = new javax.swing.JTextField();
+        contraseña = new javax.swing.JPasswordField();
         INGRESAR = new javax.swing.JButton();
         REGISTRO = new javax.swing.JButton();
         jLabelfondo = new javax.swing.JLabel();
@@ -67,15 +67,15 @@ public class interfaz extends javax.swing.JFrame {
         jLabel1.setText("CONTRASEÑA :");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 170, -1));
 
-        usua.setBackground(new java.awt.Color(255, 255, 255));
-        usua.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        usua.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(usua, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 210, -1));
+        usuario.setBackground(new java.awt.Color(255, 255, 255));
+        usuario.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        usuario.setForeground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 210, -1));
 
-        contrase.setBackground(new java.awt.Color(255, 255, 255));
-        contrase.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        contrase.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(contrase, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 362, 190, 30));
+        contraseña.setBackground(new java.awt.Color(255, 255, 255));
+        contraseña.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        contraseña.setForeground(new java.awt.Color(0, 0, 0));
+        getContentPane().add(contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 362, 190, 30));
 
         INGRESAR.setBackground(new java.awt.Color(102, 255, 255));
         INGRESAR.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 14)); // NOI18N
@@ -111,12 +111,43 @@ public class interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void INGRESARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_INGRESARActionPerformed
-         JOptionPane.showMessageDialog(null, "bienvenidos a King Monkey");
-        variedad ing = new variedad();
+      String usu=usuario.getText();
+      String pas=contraseña.getText();
+        if (usu.isEmpty()|pas.isEmpty()) {
+            JOptionPane.showMessageDialog(null,"Algun campo esta vacio");
+        }else{
+            if (usu.equals("renato1") && pas.equals("123456")) {
+             JOptionPane.showMessageDialog(null, "Bienvenido Renato\n"+"bienvenidos a King Monkey");
+             variedad ing = new variedad();
                 ing.setVisible(true);
                 this.dispose();
+            }else{
+            if (usu.equals("elias2") && pas.equals("elias12")) {
+             JOptionPane.showMessageDialog(null, "Bienvenido Elias\n"+"bienvenidos a King Monkey");
+             variedad sh = new variedad();
+                sh.setVisible(true);
+                this.dispose(); 
+            }else{
+            if (usu.equals("christian3") && pas.equals("christian34")) {
+             JOptionPane.showMessageDialog(null, "Bienvenido christian\n"+"bienvenidos a King Monkey");
+             variedad oi = new variedad();
+                oi.setVisible(true);
+                this.dispose(); 
+            }else{
+            if (usu.equals("christopher4") && pas.equals("christopher456")) {
+             JOptionPane.showMessageDialog(null, "Bienvenido christopher\n"+"bienvenidos a King Monkey");
+             variedad q = new variedad();
+                q.setVisible(true);
+                this.dispose();  
+            
+                 }else{
+                    JOptionPane.showMessageDialog(null,"Usuario o contraseña invalido");
+            }    
+            }
+            } 
+        }                
     }//GEN-LAST:event_INGRESARActionPerformed
-
+    }
     private void REGISTROActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_REGISTROActionPerformed
         registro vol = new registro();
         vol.setVisible(true);
@@ -162,11 +193,11 @@ public class interfaz extends javax.swing.JFrame {
     private javax.swing.JButton INGRESAR;
     private javax.swing.JButton REGISTRO;
     private javax.swing.JLabel USUARIO;
-    private javax.swing.JPasswordField contrase;
+    private javax.swing.JPasswordField contraseña;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabelfondo;
-    private javax.swing.JTextField usua;
+    private javax.swing.JTextField usuario;
     // End of variables declaration//GEN-END:variables
 }

@@ -12,13 +12,13 @@ import javax.swing.JOptionPane;
  *
  * @author Christopher
  */
-public class seleccionH extends javax.swing.JFrame {
+public class seleccionN extends javax.swing.JFrame {
 
    private double total=0.0;
 private int x=0;
-    public seleccionH() {
+    public seleccionN() {
         initComponents();
-         setTitle("BOLETA DE PAGOS DE COMPRAS DE HOMBRES");
+         setTitle("BOLETA DE PAGOS DE COMPRAS DE NIÑOS(AS)");
         this.setLocationRelativeTo(null);
         inicio ();
     }
@@ -262,7 +262,6 @@ private int x=0;
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFocusTraversalPolicyProvider(true);
-        setPreferredSize(new java.awt.Dimension(1560, 960));
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
         jPanel1.setForeground(new java.awt.Color(0, 153, 255));
@@ -392,7 +391,7 @@ private int x=0;
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("SELECCION DE COMPRAS DE HOMBRES");
+        jLabel2.setText("SELECCION DE COMPRAS DE NIÑOS(AS)");
 
         filaprime2.setBackground(new java.awt.Color(204, 204, 204));
         filaprime2.setForeground(new java.awt.Color(0, 0, 0));
@@ -2030,20 +2029,21 @@ private int x=0;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(seleccionH.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(seleccionN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(seleccionH.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(seleccionN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(seleccionH.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(seleccionN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(seleccionH.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(seleccionN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new seleccionH().setVisible(true);
+                new seleccionN().setVisible(true);
             }
         });
     }
