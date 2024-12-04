@@ -27,18 +27,18 @@ private int x=0;
          setImage ();
     }
       public void setImage (){
-          ImageIcon icon = new ImageIcon(getClass().getResource("/imagenes/1.png"));
-          ImageIcon icon1 = new ImageIcon(getClass().getResource("/imagenes/2.png"));
-          ImageIcon icon2 = new ImageIcon(getClass().getResource("/imagenes/3.png"));
-          ImageIcon icon3 = new ImageIcon(getClass().getResource("/imagenes/4.png"));
-          ImageIcon icon4 = new ImageIcon(getClass().getResource("/imagenes/5.png"));
-          ImageIcon icon5 = new ImageIcon(getClass().getResource("/imagenes/6.png"));
-          ImageIcon icon6 = new ImageIcon(getClass().getResource("/imagenes/7.png"));
-          ImageIcon icon7 = new ImageIcon(getClass().getResource("/imagenes/8.png"));
-          ImageIcon icon8 = new ImageIcon(getClass().getResource("/imagenes/9.png"));
-          ImageIcon icon9 = new ImageIcon(getClass().getResource("/imagenes/10.png"));
-          ImageIcon icon10 = new ImageIcon(getClass().getResource("/imagenes/11.png"));      
-          ImageIcon icon11 = new ImageIcon(getClass().getResource("/imagenes/12.png"));
+          ImageIcon icon = new ImageIcon(getClass().getResource("/imagenes/a1.png"));
+          ImageIcon icon1 = new ImageIcon(getClass().getResource("/imagenes/a2.png"));
+          ImageIcon icon2 = new ImageIcon(getClass().getResource("/imagenes/a3.png"));
+          ImageIcon icon3 = new ImageIcon(getClass().getResource("/imagenes/a4.png"));
+          ImageIcon icon4 = new ImageIcon(getClass().getResource("/imagenes/a5.png"));
+          ImageIcon icon5 = new ImageIcon(getClass().getResource("/imagenes/a6.png"));
+          ImageIcon icon6 = new ImageIcon(getClass().getResource("/imagenes/a7.png"));
+          ImageIcon icon7 = new ImageIcon(getClass().getResource("/imagenes/a8.png"));
+          ImageIcon icon8 = new ImageIcon(getClass().getResource("/imagenes/a9.png"));
+          ImageIcon icon9 = new ImageIcon(getClass().getResource("/imagenes/a10.png"));
+          ImageIcon icon10 = new ImageIcon(getClass().getResource("/imagenes/a11.png"));      
+          ImageIcon icon11 = new ImageIcon(getClass().getResource("/imagenes/a12.png"));
           Image img = icon.getImage().getScaledInstance(jLabelimagen1.getWidth(), jLabelimagen1.getHeight(), Image.SCALE_SMOOTH);
           jLabelimagen1.setIcon(new ImageIcon(img));
           Image img1 = icon1.getImage().getScaledInstance(jLabelimagen2.getWidth(), jLabelimagen2.getHeight(), Image.SCALE_SMOOTH);
@@ -1738,7 +1738,7 @@ private int x=0;
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel104, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTextFieldtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)

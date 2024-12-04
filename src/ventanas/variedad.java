@@ -64,6 +64,11 @@ public class variedad extends javax.swing.JFrame {
         AYUDA.setForeground(new java.awt.Color(0, 0, 0));
         AYUDA.setText("AYUDA");
         AYUDA.setToolTipText("");
+        AYUDA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AYUDAActionPerformed(evt);
+            }
+        });
         getContentPane().add(AYUDA, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 380, 300, 50));
 
         COMPRA.setBackground(new java.awt.Color(255, 51, 51));
@@ -121,6 +126,12 @@ public class variedad extends javax.swing.JFrame {
         og.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_COMPRAActionPerformed
+
+    private void AYUDAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AYUDAActionPerformed
+        ayuda jo = new ayuda();
+        jo.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_AYUDAActionPerformed
 
     /**
      * @param args the command line arguments

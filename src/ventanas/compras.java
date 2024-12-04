@@ -85,7 +85,7 @@ public class compras extends javax.swing.JFrame {
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 280, 50));
 
-        jButton5.setBackground(new java.awt.Color(255, 0, 204));
+        jButton5.setBackground(new java.awt.Color(0, 204, 0));
         jButton5.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("niños y niñas");
@@ -119,7 +119,7 @@ public class compras extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        seleccionM jo=new seleccionM();
+        seleccionH jo=new seleccionH();
         this.dispose();
         jo.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
